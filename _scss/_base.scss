@@ -1,0 +1,21 @@
+body {
+	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	color: #3b393d;
+	background-size: cover;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+a {
+	text-decoration: none;
+	color: #de6551;
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: #3b393d;
+}
