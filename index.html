@@ -1,8 +1,65 @@
 ---
 layout: default
 ---
+<header class="site-header app-header">
+	<img class="headerImage" src="/images/Header.png" />
 
-<div class="home">
+</header>
+
+<div class="container">
+
+
+
+
+	<div class="content row">
+		<!-- trianglify pattern container -->
+		<div class="post-list">
+			{% for post in site.posts %}
+			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+				<div class="card">
+					<img class="card-image" src="{{ post.image | prepend: site.baseurl | prepend: site.url }}" />
+					<div class="card-caption">
+						<h2 class="card-title">{{post.title}}</h2>
+						<p class="card-subtitle">{{post.subtitle}}</p>
+					</div>
+					<div class="card-exerp">{{post.excerpt }}</div>
+				</div>
+			</a>
+			{% endfor %}
+		</div>
+		<!-- cards -->
+		<div id="layoutView" class="wrapper col-xs-12 col-md-9 column pull-right"></div>
+
+		<div class="aboutMeBlock col-xs-12 col-md-3 pull-left outsideContent">
+			<div class="aboutMeBorder">
+				<h3 class="topHeaderBlock">ABOUT ME</h3>
+				<div><img src="/images/Profile.png" style="width: 100%;max-width:210px;" /></div>
+				<div class="nameBlock">
+					James Huffaker
+				</div>
+				<div class="locationBlock">
+					Seattle
+				</div>
+				<p>
+					Full stack web developer, passionate about software and an avid learner. Please reach out in the comments and let me know what you think!
+				</p>
+				<h3>ELSEWHERE</h3>
+				<div class=" socialIcons">
+					<a href="http://twitter.com/James_Huffaker" target="_blank"><img src="/images/twitter.png" /></a>
+					<a href="https://github.com/huffaker" target="_blank"><img src="/images/github.png" /></a>
+					<a href="https://www.linkedin.com/pub/james-huffaker/23/a/899" target="_blank"><img src="/images/linkedin.png" /></a>
+					<div>
+						<a href="http://www.decisivedata.net" target="_blank"><img class="ddlogo" src="/images/DDLogo.png" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<!--<div class="home">
 
   <h1 class="page-heading">Posts</h1>
 
@@ -20,4 +77,4 @@ layout: default
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
+</div>-->

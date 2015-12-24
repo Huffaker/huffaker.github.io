@@ -1,11 +1,18 @@
-<head>
+﻿<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
-
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<meta http-equiv="content-language" content="en-us" />
+	<meta name="copyright" content="Copyright (c){{ site.time | date: '20%y' }} James Huffaker. All Rights Reserved."/>
+	<meta name="author" content="James Huffaker" />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="&#64;{{site.twitter_username}}">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="twitter:image" content="http://jameshuffaker.com{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
+	<meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico"  | prepend: site.baseurl | prepend: site.url}}" />
+	<link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl | prepend: site.url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
