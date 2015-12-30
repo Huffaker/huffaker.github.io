@@ -22,7 +22,7 @@ layout: default
 		</div>
 		
 		<div class="post-twitter">
-			<a href="https://twitter.com/intent/tweet?text=&quot;{{site.title}}&quot;%20by%20%40James_Huffaker&url=http%3A%2F%2Fjameshuffaker.com/%23!%2Fblog%2F{{site.title}}" target="_blank">
+			<a href="https://twitter.com/intent/tweet?text=&quot;{{site.title | cgi_escape }}&quot;%20by%20%40James_Huffaker&url=http%3A%2F%2Fjameshuffaker.com/%23!%2Fblog%2F{{site.title | cgi_escape }}" target="_blank">
 				<img src="/images/twitter-post.png" /> Share on Twitter
 			</a>
 		</div>
