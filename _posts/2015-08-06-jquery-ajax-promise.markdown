@@ -1,7 +1,7 @@
-﻿---
+---
 layout: post
-title:  "Ajax Promises"
-date:   2015-08-06  12:23:11
+title:  "Jquery Ajax Promise"
+date:   2015-08-06
 categories: blog
 subtitle: "Promises on Multiple JQuery Ajax Calls"
 image: "/images/mountain1.png"
@@ -42,7 +42,7 @@ Load some AJAX calls into our array:
 
 Iterate through, running each AJAX call. When they all complete, run our completion logic:
 
-{% highlight ruby %}
+{% highlight javascript %}
   $.when.apply($,deferreds).then(function() {
   	$('#state').text('Complete!');
   	console.log('All data has loaded');
@@ -56,3 +56,4 @@ That's it, feel free to add comments below and let me know if you have any quest
 
 [JSBin]: https://jsbin.com/lepusu/edit?html,console,output
 [prom]: https://api.jquery.com/promise/
+

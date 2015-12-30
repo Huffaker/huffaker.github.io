@@ -2,7 +2,7 @@
 title: James Huffaker | Code Blog
 description: "Avid full stack web developer, passionate about software and learning new tools and methods."
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://huffaker.github.io" # "http://localhost:4000" # "http://jameshuffaker.com"
+url:  "http://localhost:4000" # "http://jameshuffaker.com"
 twitter_username: james_huffaker
 github_username:  huffaker
 author: "James Huffaker"

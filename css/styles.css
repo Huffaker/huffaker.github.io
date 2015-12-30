@@ -8,13 +8,13 @@ body {
   overflow: hidden;
   overflow-y: scroll; }
 
-a {
+#layoutView a {
   text-decoration: none;
   color: #de6551;
   outline: none; }
 
-a:hover,
-a:focus {
+#layoutView a:hover,
+#layoutView a:focus {
   color: #3b393d; }
 
 body {
@@ -121,45 +121,64 @@ body {
 .card {
   position: relative;
   margin: 2%;
-  padding-bottom: 20%;
   min-height: 260px;
   margin-bottom: 65px; }
 
 .card-image {
-  position: relative;
-  left: 50%;
-  display: block;
-  height: 100%;
-  max-height: 500px;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
   width: 45%;
   display: inline-block;
-  left: 22%; }
+  vertical-align: top;
+  height: 260px;
+  background-size: cover !important;
+  background-position: center !important; }
 
-.card__caption {
-  font-size: 2em;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 35px 30px 0px; }
+.card-caption {
+  width: 40%;
+  position: absolute;
+  bottom: 20px;
+  left: 10px; }
 
-.card__title {
+.card-title {
   font-size: 1.5em;
   line-height: 1;
   margin: 5px 0 0 0;
   color: #fff; }
 
-.card__subtitle {
+.card-subtitle {
   font-size: .95em;
   line-height: 1;
   margin: 5px 0 0;
   color: #fff; }
 
+.card-date {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #3b393d; }
+
+.card-exerp {
+  display: inline-block;
+  width: 50%;
+  margin-left: 20px;
+  max-height: 240px; }
+
+.card-read-more {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
 @media screen and (max-width: 720px) {
   .card-image {
     width: 100%;
     display: inline-block;
-    left: 50%; } }
+    left: 50%; }
+
+  .card-exerp {
+    display: none; }
+
+  .card-read-more {
+    display: none; }
+
+  .card-caption {
+    width: 90%; } }
 
 /*# sourceMappingURL=styles.css.map */

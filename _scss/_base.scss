@@ -9,13 +9,13 @@ body {
 	overflow-y: scroll;
 }
 
-a {
+#layoutView a {
 	text-decoration: none;
 	color: #de6551;
 	outline: none;
 }
 
-a:hover,
-a:focus {
+#layoutView a:hover,
+#layoutView a:focus {
 	color: #3b393d;
 }

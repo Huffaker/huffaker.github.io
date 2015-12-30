@@ -6,29 +6,32 @@ layout: default
 
 </header>
 
-<div class="container">
+<div class="container ">
 
 
 
 
 	<div class="content row">
-		<!-- trianglify pattern container -->
-		<div class="post-list">
+		<div id="layoutView" class="wrapper col-xs-12 col-md-9 column pull-right">
 			{% for post in site.posts %}
 			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 				<div class="card">
-					<img class="card-image" src="{{ post.image | prepend: site.baseurl | prepend: site.url }}" />
+					<!--<img class="card-image" src="{{ post.image | prepend: site.baseurl | prepend: site.url }}"/>-->
+					<div class="card-image" style="background: url({{ post.image | prepend: site.baseurl | prepend: site.url }})"></div>
 					<div class="card-caption">
 						<h2 class="card-title">{{post.title}}</h2>
 						<p class="card-subtitle">{{post.subtitle}}</p>
 					</div>
-					<div class="card-exerp">{{post.excerpt }}</div>
+					<div class="card-exerp">
+						<div class="card-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+						{{post.excerpt }}
+					</div>
+					<div class="card-read-more">Read More...</div>
 				</div>
 			</a>
 			{% endfor %}
 		</div>
-		<!-- cards -->
-		<div id="layoutView" class="wrapper col-xs-12 col-md-9 column pull-right"></div>
+
 
 		<div class="aboutMeBlock col-xs-12 col-md-3 pull-left outsideContent">
 			<div class="aboutMeBorder">
@@ -64,15 +67,15 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	{% for post in site.posts %}
+	  <li>
+		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+		<h2>
+		  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		</h2>
+	  </li>
+	{% endfor %}
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
