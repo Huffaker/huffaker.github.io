@@ -1,15 +1,38 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="site-header app-header">
+	<img class="headerImage" src="{{ page.image | prepend: site.baseurl | prepend: site.url }}" />
+</div>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<div id="layoutView" class="post container">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+	<header class="post-header">
+		<a href="{{ site.baseurl | prepend: site.url}}"><img src="/images/close.png" class="post-btn-close btn fa fa-times" /></a>
+		<div class="post-caption">
+			<h2 class="post-title">{{page.title}}</h2>
+			<p class="post-subtitle">{{page.subtitle}}</p>
+		</div>
+		<div class="page-author">
+			<a href="{{ site.baseurl | prepend: site.url}}">
+				<img class="meta-avatar" src="/images/Profile-mini.png" alt="James Huffaker"/>
+				<span class="meta-author">James Huffaker</span>
+			</a>
+			<div class="post-date">{{ page.date | date: "%b %-d, %Y" }}</div>
+		</div>
+		
+		<div class="post-twitter">
+			<a href="https://twitter.com/intent/tweet?text=&quot;{{site.title}}&quot;%20by%20%40James_Huffaker&url=http%3A%2F%2Fjameshuffaker.com/%23!%2Fblog%2F{{site.title}}" target="_blank">
+				<img src="/images/twitter-post.png" /> Share on Twitter
+			</a>
+		</div>
+	</header>
+	<article class="post-content">
+		{{ content }}
+	</article>
+	{% if page.github %}
+	<div class="ct-github-link">
+		<a href="http://github.com{{ page.github }}" target="_blank">Find this project on Github</a>
+	</div>
+	{% endif %}
 </div>

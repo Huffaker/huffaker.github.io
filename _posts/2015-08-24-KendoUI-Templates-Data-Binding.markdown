@@ -5,6 +5,7 @@ date:   2015-11-23
 categories: blog
 subtitle: "A few KendoUI template and data-binding examples"
 image: "/images/kendoTemplateDataBinding.png"
+github: "/Huffaker/KendoTemplateExample"
 ---
 
 

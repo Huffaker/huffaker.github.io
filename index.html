@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<header class="site-header app-header">
+<div class="site-header app-header">
 	<img class="headerImage" src="/images/Header.png" />
 
-</header>
+</div>
 
 <div class="container ">
 
@@ -16,7 +16,6 @@ layout: default
 			{% for post in site.posts %}
 			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 				<div class="card">
-					<!--<img class="card-image" src="{{ post.image | prepend: site.baseurl | prepend: site.url }}"/>-->
 					<div class="card-image" style="background: url({{ post.image | prepend: site.baseurl | prepend: site.url }})"></div>
 					<div class="card-caption">
 						<h2 class="card-title">{{post.title}}</h2>
