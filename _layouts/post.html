@@ -35,5 +35,20 @@ layout: default
 		<a href="http://github.com{{ page.github }}" target="_blank">Find this project on Github</a>
 	</div>
 	{% endif %}
-	<script type="text/javascript" src="http://jameshuffakercom.disqus.com/embed.js"></script>
+	<div id="disqus_thread"></div>
+	<script>
+		var disqus_config = function () {
+		this.page.url = 'http://jameshuffaker.com';
+		this.page.identifier = 'jameshuffakercom';
+		};
+		(function() {
+		var d = document, s = d.createElement('script');
+
+		s.src = '//jameshuffakercom.disqus.com/embed.js';
+
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
