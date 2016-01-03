@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Jquery Ajax Promise"
+name: "Jquery Ajax Promise"
 date:   2015-08-06
 categories: blog
 subtitle: "Promises on Multiple JQuery Ajax Calls"

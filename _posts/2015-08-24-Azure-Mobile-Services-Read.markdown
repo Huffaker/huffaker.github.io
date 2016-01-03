@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Azure Mobile Services Read"
+name:  "Azure Mobile Services Read"
 date:   2015-09-09
 categories: blog
 subtitle: "Complex SQL Table Relationships with a JavaScript Backend"
