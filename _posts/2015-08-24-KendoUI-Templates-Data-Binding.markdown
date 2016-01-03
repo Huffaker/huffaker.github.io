@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "KendoUI Templates & Data-Binding"
-name: "KendoUI Templates Data Binding"
 date:   2015-11-23
 categories: blog
 subtitle: "A few KendoUI template and data-binding examples"

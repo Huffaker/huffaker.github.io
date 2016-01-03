@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Azure Mobile Services Insert"
-names:  "Azure Mobile Services Insert"
 date:   2015-08-24
 categories: blog
 subtitle: "Complex SQL Table Relationships with a JavaScript Backend"
