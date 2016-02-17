@@ -17,7 +17,7 @@ image: "/images/Header.png"
 			{% for post in site.posts %}
 			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 				<div class="card">
-					<div class="card-image" style="background: url({{ post.image | prepend: site.baseurl | prepend: site.url }})"></div>
+					<div class="card-image" style="background: url({{ post.imagemin | prepend: site.baseurl | prepend: site.url }})"></div>
 					<div class="card-caption">
 						<h2 class="card-title">{{post.title}}</h2>
 						<p class="card-subtitle">{{post.subtitle}}</p>

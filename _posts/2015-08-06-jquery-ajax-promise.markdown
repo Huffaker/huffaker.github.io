@@ -5,6 +5,7 @@ date:   2015-08-06
 categories: blog
 subtitle: "Promises on Multiple JQuery Ajax Calls"
 image: "/images/mountain1.png"
+imagemin: "/images/mountain1.min.png"
 ---
 
 I recently ran into a situation where I had multiple AJAX calls completing and needed to perform some logic when they ALL finish. I can never seem to remember how to do this when I need it so, here's a blog post, even if just for my benefit.

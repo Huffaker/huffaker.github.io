@@ -5,6 +5,7 @@ date:   2015-08-24
 categories: blog
 subtitle: "Complex SQL Table Relationships with a JavaScript Backend"
 image: "/images/azureInsert.png"
+imagemin: "/images/azureInsert.min.png"
 ---
 
 Azure mobile services provides a significant number of helpful tools for fast development and easy deployment. Excellent tooling is provided such as authentication, cross platform push notifications, and quick database development. However, all this framework can lead to confusion around performing more advanced concepts. In a series of posts I hope to cover some of my findings starting with managing complex database relationships.

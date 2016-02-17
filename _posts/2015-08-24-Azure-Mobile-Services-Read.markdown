@@ -5,6 +5,7 @@ date:   2015-09-09
 categories: blog
 subtitle: "Complex SQL Table Relationships with a JavaScript Backend"
 image: "/images/azureRead.png"
+imagemin: "/images/azureRead.min.png"
 ---
 
 
