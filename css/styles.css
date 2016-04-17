@@ -23,7 +23,8 @@ body {
 .site-header {
   width: 100%; }
   .site-header .headerImage {
-    width: 100%; }
+    width: 100%;
+    background-color: black; }
 
 .user-status a a:visited {
   color: orangered; }
@@ -168,7 +169,8 @@ body {
   .card-image {
     width: 100%;
     display: inline-block;
-    left: 50%; }
+    left: 50%;
+    background-color: black; }
 
   .card-exerp {
     display: none; }
