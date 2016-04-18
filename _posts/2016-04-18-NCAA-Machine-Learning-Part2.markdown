@@ -8,7 +8,7 @@ image: "/images/NCAAMLPart1.png"
 imagemin: "/images/NCAAMLPart1.min.png"
 ---
 
-Let's dig into how we can use Machine Learning to do some college basketball predication. In the last post we discussed how to scrap the data into a SQL database. Now let's open up that dataset and do some analytics. I will be using Microsoft's Azure machine learning to process the data but feel free to use any tool you would like. Hopefully, I'll give you a few ideas on how to get started and show you know what worked for me and what didn't.
+Let's dig into how we can use Machine Learning to do some college basketball predication. In the last post we discussed how to scrap the data into a SQL database. Now let's open up that dataset and do some analytics. I will be using Microsoft's Azure machine learning to process the data but feel free to use any tool you would like. Hopefully, I'll give you a few ideas on how to get started and show you what worked for me and what didn't.
 
 [Azure Machine Learning]( https://azure.microsoft.com/en-us/services/machine-learning/) has a free trial. Even if you find you have to sign up, the size of the dataset is so small it's really not much money.
 
